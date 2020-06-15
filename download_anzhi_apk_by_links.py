@@ -88,7 +88,7 @@ if __name__ == "__main__":
     path = jsons_path[0]
     threads = list()
     for index, item in enumerate(jsons_path):  # 一个文件（一个种类）设置一个下载线程
-        t = threading.Thread(target=download, args=(item,), name="thread" + str(index))
+        t = threading.Thread(target=download, args=(item, apk_save_dir, ), name="thread" + str(index))
         threads.append(t)
     for t in threads:
         t.setDaemon(True)
