@@ -71,9 +71,9 @@ def SaveApkToJSON(json_root_dir):
     cats = getCatURL()  # 获取安智市场APK分类
 
     for index1, i in enumerate(cats):
-        if index1 <= 7:
-            continue
-        all_links = getSoftItems(i)
+        # if index1 <= 7:
+        #     continue
+        all_links = getSoftItems(i)  # 得到链接
         all_json = list()
         for index2, link in enumerate(all_links):
             print("连接下标：{}，连接：{}".format(index2, link))
