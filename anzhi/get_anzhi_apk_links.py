@@ -90,7 +90,7 @@ def SaveApkToJSON(json_root_dir):
 
 # 将安智市场中的apk下载链接保存到json中
 if __name__ == "__main__":
-    json_root_dir = os.path.abspath(r"./json")
+    json_root_dir = os.path.abspath(r"../json")
     if not os.path.exists(json_root_dir):
         os.makedirs(json_root_dir)
     SaveApkToJSON(json_root_dir)
